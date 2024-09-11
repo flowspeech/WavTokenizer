@@ -3,7 +3,7 @@ SOTA Discrete Codec Models With Forty Tokens Per Second for Audio Language Model
 
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://github.com/jishengpeng/wavtokenizer)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2408.16532)
 [![demo](https://img.shields.io/badge/WanTokenizer-Demo-red)](https://wavtokenizer.github.io/)
 [![model](https://img.shields.io/badge/%F0%9F%A4%97%20WavTokenizer-Models-blue)](https://huggingface.co/novateur/WavTokenizer)
 
@@ -14,7 +14,8 @@ SOTA Discrete Codec Models With Forty Tokens Per Second for Audio Language Model
 ### 🎉🎉 WavTokenizer owns rich semantic information and is build for audio language models such as GPT4-o.
 
 # 🔥 News
-- *2024.08*: We release WavTokenizer on arxiv.
+- *2024.09.09*: We release WavTokenizer-medium checkpoint on [huggingface](https://huggingface.co/collections/novateur/wavtokenizer-medium-large-66de94b6fd7d68a2933e4fc0).
+- *2024.08.31*: We release WavTokenizer on arxiv.
 
 ![result](result.png)
 
@@ -103,9 +104,9 @@ audio_out = wavtokenizer.decode(features, bandwidth_id=bandwidth_id)
 | WavTokenizer-small-600-24k-4096             |             [🤗](https://huggingface.co/novateur/WavTokenizer/blob/main/WavTokenizer_small_600_24k_4096.ckpt)    | LibriTTS  | 40  |  Speech  | √ |
 | WavTokenizer-small-320-24k-4096             |             [🤗](https://huggingface.co/novateur/WavTokenizer/blob/main/WavTokenizer_small_320_24k_4096.ckpt)     | LibriTTS  | 75 |  Speech  | √|
 | WavTokenizer-medium-600-24k-4096               |               [🤗](https://github.com/jishengpeng/wavtokenizer)         | 10000 Hours | 40  |  Speech, Audio, Music  | Coming Soon|
-| WavTokenizer-medium-320-24k-4096                 |               [🤗](https://github.com/jishengpeng/wavtokenizer)         | 10000 Hours | 75 |  Speech, Audio, Music  | Coming Soon|
+| WavTokenizer-medium-320-24k-4096                 |               [🤗](https://huggingface.co/collections/novateur/wavtokenizer-medium-large-66de94b6fd7d68a2933e4fc0)         | 10000 Hours | 75 |  Speech, Audio, Music  | √ |
 | WavTokenizer-large-600-24k-4096 | [🤗](https://github.com/jishengpeng/wavtokenizer) | 80000 Hours | 40 |   Speech, Audio, Music   | Coming Soon|
-| WavTokenizer-large-320-24k-4096   | [🤗](https://github.com/jishengpeng/wavtokenizer) | 80000 Hours | 75 |   Speech, Audio, Music   | Comming Soon |
+| WavTokenizer-large-320-24k-4096   | [🤗](https://github.com/jishengpeng/wavtokenizer) | 80000 Hours | 75 |   Speech, Audio, Music   | Coming Soon |
 
       
 
@@ -137,6 +138,16 @@ python train.py fit --config ./configs/xxx.yaml
 If this code contributes to your research, please cite our work, Language-Codec and WavTokenizer:
 
 ```
+@misc{ji2024wavtokenizerefficientacousticdiscrete,
+      title={WavTokenizer: an Efficient Acoustic Discrete Codec Tokenizer for Audio Language Modeling}, 
+      author={Shengpeng Ji and Ziyue Jiang and Xize Cheng and Yifu Chen and Minghui Fang and Jialong Zuo and Qian Yang and Ruiqi Li and Ziang Zhang and Xiaoda Yang and Rongjie Huang and Yidi Jiang and Qian Chen and Siqi Zheng and Wen Wang and Zhou Zhao},
+      year={2024},
+      eprint={2408.16532},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2408.16532}, 
+}
+
 @misc{ji2024languagecodec,
       title={Language-Codec: Reducing the Gaps Between Discrete Codec Representation and Speech Language Models}, 
       author={Shengpeng Ji and Minghui Fang and Ziyue Jiang and Rongjie Huang and Jialung Zuo and Shulei Wang and Zhou Zhao},
